@@ -1,11 +1,9 @@
-<!-- Version 2: jQuery show() function -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Template: Simplicity 2 V2</title>
+    <title>Portfolio Template: Simplicity in Design V1</title>
 
     <link rel="stylesheet" href="assets/styles/styles.css">
 
@@ -14,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-    <!-- Link for Icons -->
+    <!-- Awesome Fonts Link for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- JQuery link -->
@@ -29,28 +27,21 @@
 
         <nav class="nav-section">
     
+            <!-- Header on Left of Navigation Section -->
             <div class="nav-header">
-                <h3>Jane Doe</h3>
-                <p class="p-header">Software Engineer</p>
+                
+                <a href="#" class="header-nav-link logo" onclick="displayIntroduction()">Jane Doe</a>
+                <a href="#" class="header-nav-link" onclick="displayIntroduction()">Software Engineer</a>
             </div>
     
+            <!-- Navigation Links on Right of Navigation Section -->
             <div class="navbar">
-    
-                <div class="nav-item nav-item-border">
-                    <a href="#" class="nav-link" onclick="displayIntroduction()">Introduction</a>
-                </div>
-    
-                <div class="nav-item nav-item-border">
-                    <a href="#" class="nav-link" onclick="displayResume()">Resume</a>
-                </div>
-    
-                <div class="nav-item nav-item-border">
-                    <a href="#" class="nav-link" onclick="displayProjects()">Projects</a>
-                </div>
-    
-                <div class="nav-item">
-                    <a href="#" class="nav-link" onclick="displayContact()">Contact</a>
-                </div>
+
+                <a href="#" class="nav-link" onclick="displayIntroduction()">Introduction</a>
+                <a href="#" class="nav-link" onclick="displayAbout()">About Me</a>
+                <a href="#" class="nav-link" onclick="displayResume()">Resume</a>
+                <a href="#" class="nav-link" onclick="displayProjects()">My Projects</a>
+                <a href="#" class="nav-link" onclick="displayContact()">Contact Me</a>
     
             </div>
     
@@ -59,25 +50,24 @@
     </header>
 
 
-
-
-
-
-    <!-- BIG MAC MOBILE HEADER NAVIGATION MENU -->
+    <!-- BIG MAC "HEADER" MOBILE NAVIGATION MENU -->
     <!-- Displayed when screen size is 678px or below -->
     <div class="bigmac-section">
 
         <div class="bigmac">
+
             <div class="bigmac-header">
-                <h3>Jane Doe</h3>
-                <p class="p-header">Software Engineer</p>
+                <a href="#" class="header-nav-link logo" onclick="displayIntroduction()"><h3>Jane Doe</h3></a>
+                <a href="#" class="header-nav-link" onclick="displayIntroduction()">Software Engineer</a>
             </div>
+
             <div id="bigmac-links">
 
                 <button class="menu-button" onclick="displayIntroduction()"><a href="#">Introduction</a></button><br>
+                <button class="menu-button" onclick="displayAbout()"><a href="#">About Me</a></button><br>
                 <button class="menu-button" onclick="displayResume()"><a href="#">Resume</a></button><br>
-                <button class="menu-button" onclick="displayProjects()"><a href="#">Projects</a></button><br>
-                <button class="menu-button" onclick="displayContact()"><a href="#">Contact</a></button><br>
+                <button class="menu-button" onclick="displayProjects()"><a href="#">My Projects</a></button><br>
+                <button class="menu-button" onclick="displayContact()"><a href="#">Contact Me</a></button><br>
                 <button class="menu-button" onclick="displayPrivacy()"><a href="#">Privacy Policy</a></button><br>
                 <button class="menu-button" onclick="displayTerms()"><a href="#">Terms of Use</a></button><br>
 
@@ -94,26 +84,55 @@
     <!-- INTRODUCTION SECTION -->
     <div id="intro" class="section-row intro-section">
 
-        <div class="sub-section-row intro-image-section">
-            <img src="assets/images/jane-doe.webp" class="image" width="600" height="600">
+        <div class="sub-section-row">
+            <img src="assets/images/jane-doe_660.webp" class="image" width="300" height="300">
         </div>
         
-
-        <div class="sub-section-col intro-right-section">
-            <h1>Hello</h1>
+        <div class="sub-section-col">
+                <h1>Hi!</h1>
             <h3>A little about me</h3>
-            <p class="p-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tortor eros, aliquet eu dui id, tincidunt sagittis dolor. Donec tristique felis nec consectetur tempor.</p>
-            <p class="p-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tortor eros, aliquet eu dui id, tincidunt sagittis dolor. Donec tristique felis nec consectetur tempor.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tortor eros, aliquet eu dui id, tincidunt sagittis dolor. Donec tristique felis nec consectetur tempor.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tortor eros, aliquet eu dui id, tincidunt sagittis dolor. Donec tristique felis nec consectetur tempor.</p>
 
-            <div class="sub-section-row">
+            <div class="sub-section-row button-section">
+                <a href="#" onclick="displayAbout()" class="button violet ta-c">About Me</a>
                 <a href="#" onclick="displayResume()" class="button blue">Resume</a>
                 <a href="#" onclick="displayProjects()" class="button green">Projects</a>
                 <a href="#" onclick="displayContact()" class="button yellow">Contact</a>
             </div>
         </div>
 
-        <div class="intro-abstract-shape"></div>
-        
+    </div>
+
+
+
+    <!-- ABOUT SECTION -->
+    <div id="about" class="section-row about-section">
+
+        <div class="image-section">
+
+            <div class="image-container">
+                <img src="assets/images/jane-doe.webp" class="image">
+            </div>
+
+        </div>
+
+        <div class="sub-section-col right-section">
+
+            <h1>About Me</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tortor eros, aliquet eu dui id, tincidunt sagittis dolor. Donec tristique felis nec consectetur tempor. Vivamus sit amet aliquam magna, sit amet euismod eros. Etiam non sem mollis, aliquet leo nec, laoreet odio. Pellentesque tristique, mi a aliquam porta, turpis velit cursus nulla, eget blandit leo risus quis ipsum. Integer tempus enim ut libero consectetur, a tristique lacus ultricies. Duis molestie placerat sollicitudin. Nullam nunc dolor, pretium id augue nec, lobortis pretium nulla. Mauris faucibus sed sapien in tempor. Nunc faucibus ex non enim vestibulum, vitae hendrerit nisi dignissim. Fusce dapibus lorem nec metus viverra, vitae finibus mi fringilla. Praesent commodo velit a maximus tincidunt. Nam lacinia vitae nulla non dignissim. Integer ante ipsum, mattis sit amet eleifend quis, feugiat non sapien. Nulla vel justo ac orci sagittis dapibus ut vitae dui. Pellentesque quis nisi magna.</p>
+            <p>In venenatis nisi risus, ac tincidunt lectus eleifend eu. Phasellus condimentum in dolor id viverra. Vestibulum risus orci, dapibus a turpis vitae, pharetra aliquam ex. Morbi vehicula metus erat, eget placerat ex elementum quis. Etiam vestibulum lorem vel tortor lobortis, eu eleifend nisi sagittis. Donec id elit et dui condimentum aliquet et sit amet elit. Ut vulputate, ipsum ut commodo feugiat, quam tellus posuere nunc, nec porttitor nibh urna vitae neque. Donec feugiat molestie lectus, ut posuere dui sagittis a. Duis placerat dui a leo sagittis, quis fringilla lacus eleifend. Aliquam efficitur tincidunt lorem et lobortis. Curabitur non metus sit amet quam blandit tincidunt. Suspendisse aliquam tempus ante. Donec finibus odio nisl. Integer congue ex et est cursus bibendum et a enim.</p>
+
+            <div class="sub-section-row button-section">
+                <a href="#" onclick="displayIntroduction()" class="button red">Introduction</a>
+                <a href="#" onclick="displayResume()" class="button blue">Resume</a>
+                <a href="#" onclick="displayProjects()" class="button green">Projects</a>
+                <a href="#" onclick="displayContact()" class="button yellow">Contact</a>
+            </div>
+
+        </div>
+
     </div>
 
 
@@ -121,27 +140,52 @@
     <!-- RESUME SECTION -->
     <div id="resume" class="section-row resume-section">
 
-        <div class="sub-section image-section">
-            <img src="assets/images/jane-doe.webp" class="image">
+        <div class="image-section">
+
+            <div class="image-container">
+                <img src="assets/images/jane-doe.webp" class="image">
+            </div>
+
         </div>
 
         <div class="sub-section-col right-section">
 
             <h1>Resume</h1>
-            <h3>Education</h3>
-            <p class="p-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tortor eros, aliquet eu dui id, tincidunt sagittis dolor. Donec tristique felis nec consectetur tempor.</p>
-            <h3>Work Experience</h3>
-            <p class="p-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tortor eros, aliquet eu dui id, tincidunt sagittis dolor. Donec tristique felis nec consectetur tempor.</p>
+            <h2>Education</h2>
+
+            <h3>School</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tortor eros, aliquet eu dui id, tincidunt sagittis dolor. Donec tristique felis nec consectetur tempor.</p>
+            <h3>University</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tortor eros, aliquet eu dui id, tincidunt sagittis dolor. Donec tristique felis nec consectetur tempor.</p>
+            <h3>Other Academies</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tortor eros, aliquet eu dui id, tincidunt sagittis dolor. Donec tristique felis nec consectetur tempor.</p>
+
+            <h2>Work Experience</h2>
+            <h3>The Software Co.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tortor eros, aliquet eu dui id, tincidunt sagittis dolor. Donec tristique felis nec consectetur tempor.</p>
+            <h3>Cyber Security Solutions</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tortor eros, aliquet eu dui id, tincidunt sagittis dolor. Donec tristique felis nec consectetur tempor.</p>
+            <h3>Artificial Inc.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tortor eros, aliquet eu dui id, tincidunt sagittis dolor. Donec tristique felis nec consectetur tempor.</p>
+
+            <h2>Hobbies and Interests</h2>
+            <ul>
+                <li>Hobby/Interest 1</li>
+                <li>Hobby/Interest 1</li>
+                <li>Hobby/Interest 1</li>
+                <li>Hobby/Interest 1</li>
+                <li>Hobby/Interest 1</li>
+                <li>Hobby/Interest 1</li>
+            </ul>
 
             <div class="sub-section-row button-section">
                 <a href="#" onclick="displayIntroduction()" class="button red">Introduction</a>
+                <a href="#" onclick="displayAbout()" class="button violet ta-c">About Me</a>
                 <a href="#" onclick="displayProjects()" class="button green">Projects</a>
                 <a href="#" onclick="displayContact()" class="button yellow">Contact</a>
             </div>
 
         </div>
-
-        <div class="resume-abstract-shape"></div>
 
     </div>
 
@@ -150,35 +194,31 @@
     <!-- PROJECTS SECTION -->
     <div id="projects" class="section-row projects-section">
 
-        <div class="sub-section image-section">
+        <div class="image-section">
             <img src="assets/images/jane-doe.webp" class="image">
         </div>
 
         <div class="sub-section-col right-section">
 
-            <h1>Projects</h1>
+            <h1>My Projects</h1>
             <h3>Project 1</h3>
-            <p class="p-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tortor eros, aliquet eu dui id, tincidunt sagittis dolor. Donec tristique felis nec consectetur tempor.</p>
+            <img src="assets/images/developer-8829735.webp" class="image-medium">
+            <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tortor eros, aliquet eu dui id, tincidunt sagittis dolor. Donec tristique felis nec consectetur tempor. Vivamus sit amet aliquam magna, sit amet euismod eros. Etiam non sem mollis, aliquet leo nec, laoreet odio. Pellentesque tristique, mi a aliquam porta, turpis velit cursus nulla, eget blandit leo risus quis ipsum. Integer tempus enim ut libero consectetur, a tristique lacus ultricies.</p>
             <h3>Project 2</h3>
-            <p class="p-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tortor eros, aliquet eu dui id, tincidunt sagittis dolor. Donec tristique felis nec consectetur tempor.</p>
+            <img src="assets/images/ai-generated-8273245.webp" class="image-medium">
+            <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tortor eros, aliquet eu dui id, tincidunt sagittis dolor. Donec tristique felis nec consectetur tempor. Vivamus sit amet aliquam magna, sit amet euismod eros. Etiam non sem mollis, aliquet leo nec, laoreet odio. Pellentesque tristique, mi a aliquam porta, turpis velit cursus nulla, eget blandit leo risus quis ipsum. Integer tempus enim ut libero consectetur, a tristique lacus ultricies.</p>
             <h3>Project 3</h3>
-            <p class="p-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tortor eros, aliquet eu dui id, tincidunt sagittis dolor. Donec tristique felis nec consectetur tempor.</p>
-            <h3>Project 4</h3>
-            <p class="p-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tortor eros, aliquet eu dui id, tincidunt sagittis dolor. Donec tristique felis nec consectetur tempor.</p>
-            <h3>Project 5</h3>
-            <p class="p-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tortor eros, aliquet eu dui id, tincidunt sagittis dolor. Donec tristique felis nec consectetur tempor.</p>
-            <h3>Project 6</h3>
-            <p class="p-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tortor eros, aliquet eu dui id, tincidunt sagittis dolor. Donec tristique felis nec consectetur tempor.</p>
+            <img src="assets/images/program-6944163.webp" class="image-medium">
+            <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tortor eros, aliquet eu dui id, tincidunt sagittis dolor. Donec tristique felis nec consectetur tempor. Vivamus sit amet aliquam magna, sit amet euismod eros. Etiam non sem mollis, aliquet leo nec, laoreet odio. Pellentesque tristique, mi a aliquam porta, turpis velit cursus nulla, eget blandit leo risus quis ipsum. Integer tempus enim ut libero consectetur, a tristique lacus ultricies.</p>
 
             <div class="sub-section-row button-section">
                 <a href="#" onclick="displayIntroduction()" class="button red">Introduction</a>
+                <a href="#" onclick="displayAbout()" class="button violet ta-c">About Me</a>
                 <a href="#" onclick="displayResume()" class="button blue">Resume</a>
                 <a href="#" onclick="displayContact()" class="button yellow">Contact</a>
             </div>
 
         </div>
-
-        <div class="projects-abstract-shape"></div>
 
     </div>
 
@@ -187,27 +227,26 @@
     <!-- CONTACT SECTION -->
     <div id="contact" class="section-row contact-section">
 
-        <div class="sub-section image-section">
+        <div class="image-section">
             <img src="assets/images/jane-doe.webp" class="image">
         </div>
 
         <div class="sub-section-col right-section">
 
-            <h1>Contact</h1>
+            <h1>Contact Me</h1>
             <h3>Telephone</h3>
-            <p class="p-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tortor eros, aliquet eu dui id, tincidunt sagittis dolor. Donec tristique felis nec consectetur tempor.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tortor eros, aliquet eu dui id, tincidunt sagittis dolor. Donec tristique felis nec consectetur tempor.</p>
             <h3>Email</h3>
-            <p class="p-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tortor eros, aliquet eu dui id, tincidunt sagittis dolor. Donec tristique felis nec consectetur tempor.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tortor eros, aliquet eu dui id, tincidunt sagittis dolor. Donec tristique felis nec consectetur tempor.</p>
 
             <div class="sub-section-row button-section">
                 <a href="#" onclick="displayIntroduction()" class="button red">Introduction</a>
+                <a href="#" onclick="displayAbout()" class="button violet ta-c">About Me</a>
                 <a href="#" onclick="displayResume()" class="button blue">Resume</a>
                 <a href="#" onclick="displayProjects()" class="button green">Projects</a>
             </div>
 
         </div>
-
-        <div class="contact-abstract-shape"></div>
 
     </div>
 
@@ -216,28 +255,27 @@
     <!-- PRIVACY POLICY SECTION -->
     <div id="privacy" class="section-row privacy-section">
 
-        <div class="sub-section image-section">
+        <div class="image-section">
             <img src="assets/images/jane-doe.webp" class="image">
         </div>
 
         <div class="sub-section-col right-section">
 
             <h1>Privacy Policy</h1>
-            <p class="p-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tortor eros, aliquet eu dui id, tincidunt sagittis dolor. Donec tristique felis nec consectetur tempor. Vivamus sit amet aliquam magna, sit amet euismod eros. Etiam non sem mollis, aliquet leo nec, laoreet odio. Pellentesque tristique, mi a aliquam porta, turpis velit cursus nulla, eget blandit leo risus quis ipsum. Integer tempus enim ut libero consectetur, a tristique lacus ultricies. Duis molestie placerat sollicitudin. Nullam nunc dolor, pretium id augue nec, lobortis pretium nulla. Mauris faucibus sed sapien in tempor. Nunc faucibus ex non enim vestibulum, vitae hendrerit nisi dignissim. Fusce dapibus lorem nec metus viverra, vitae finibus mi fringilla. Praesent commodo velit a maximus tincidunt. Nam lacinia vitae nulla non dignissim. Integer ante ipsum, mattis sit amet eleifend quis, feugiat non sapien. Nulla vel justo ac orci sagittis dapibus ut vitae dui. Pellentesque quis nisi magna.</p>
-            <p class="p-light">In venenatis nisi risus, ac tincidunt lectus eleifend eu. Phasellus condimentum in dolor id viverra. Vestibulum risus orci, dapibus a turpis vitae, pharetra aliquam ex. Morbi vehicula metus erat, eget placerat ex elementum quis. Etiam vestibulum lorem vel tortor lobortis, eu eleifend nisi sagittis. Donec id elit et dui condimentum aliquet et sit amet elit. Ut vulputate, ipsum ut commodo feugiat, quam tellus posuere nunc, nec porttitor nibh urna vitae neque. Donec feugiat molestie lectus, ut posuere dui sagittis a. Duis placerat dui a leo sagittis, quis fringilla lacus eleifend. Aliquam efficitur tincidunt lorem et lobortis. Curabitur non metus sit amet quam blandit tincidunt. Suspendisse aliquam tempus ante. Donec finibus odio nisl. Integer congue ex et est cursus bibendum et a enim.</p>
-            <p class="p-light">Aliquam quis neque risus. Curabitur rutrum, ante semper rhoncus tincidunt, enim mi tristique elit, at vestibulum purus urna eget nisi. Fusce luctus arcu a nibh interdum ultrices. Sed ac urna aliquam, porttitor sem sed, aliquam eros. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam ac vehicula ex. Fusce ac ultrices nisl, vitae finibus orci. Aenean in porta orci.</p>
-            <p class="p-light">Integer sed accumsan risus. Quisque accumsan nec ante sit amet vulputate. Etiam consequat augue vel ullamcorper maximus. Nulla tincidunt suscipit ullamcorper. Donec quis blandit enim. Curabitur vitae elit a erat malesuada posuere id et ipsum. Sed rutrum fermentum sollicitudin. In malesuada massa nulla, vel euismod metus dignissim vitae. Vivamus ut nunc est. Praesent sit amet iaculis dui, id lobortis urna. Nam ut facilisis orci. Duis tincidunt velit vestibulum massa laoreet scelerisque. Duis massa justo, accumsan ac feugiat sit amet, tempor vel mauris. Curabitur a eros elit. Aliquam condimentum at neque sed venenatis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tortor eros, aliquet eu dui id, tincidunt sagittis dolor. Donec tristique felis nec consectetur tempor. Vivamus sit amet aliquam magna, sit amet euismod eros. Etiam non sem mollis, aliquet leo nec, laoreet odio. Pellentesque tristique, mi a aliquam porta, turpis velit cursus nulla, eget blandit leo risus quis ipsum. Integer tempus enim ut libero consectetur, a tristique lacus ultricies. Duis molestie placerat sollicitudin. Nullam nunc dolor, pretium id augue nec, lobortis pretium nulla. Mauris faucibus sed sapien in tempor. Nunc faucibus ex non enim vestibulum, vitae hendrerit nisi dignissim. Fusce dapibus lorem nec metus viverra, vitae finibus mi fringilla. Praesent commodo velit a maximus tincidunt. Nam lacinia vitae nulla non dignissim. Integer ante ipsum, mattis sit amet eleifend quis, feugiat non sapien. Nulla vel justo ac orci sagittis dapibus ut vitae dui. Pellentesque quis nisi magna.</p>
+            <p>In venenatis nisi risus, ac tincidunt lectus eleifend eu. Phasellus condimentum in dolor id viverra. Vestibulum risus orci, dapibus a turpis vitae, pharetra aliquam ex. Morbi vehicula metus erat, eget placerat ex elementum quis. Etiam vestibulum lorem vel tortor lobortis, eu eleifend nisi sagittis. Donec id elit et dui condimentum aliquet et sit amet elit. Ut vulputate, ipsum ut commodo feugiat, quam tellus posuere nunc, nec porttitor nibh urna vitae neque. Donec feugiat molestie lectus, ut posuere dui sagittis a. Duis placerat dui a leo sagittis, quis fringilla lacus eleifend. Aliquam efficitur tincidunt lorem et lobortis. Curabitur non metus sit amet quam blandit tincidunt. Suspendisse aliquam tempus ante. Donec finibus odio nisl. Integer congue ex et est cursus bibendum et a enim.</p>
+            <p>Aliquam quis neque risus. Curabitur rutrum, ante semper rhoncus tincidunt, enim mi tristique elit, at vestibulum purus urna eget nisi. Fusce luctus arcu a nibh interdum ultrices. Sed ac urna aliquam, porttitor sem sed, aliquam eros. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam ac vehicula ex. Fusce ac ultrices nisl, vitae finibus orci. Aenean in porta orci.</p>
+            <p>Integer sed accumsan risus. Quisque accumsan nec ante sit amet vulputate. Etiam consequat augue vel ullamcorper maximus. Nulla tincidunt suscipit ullamcorper. Donec quis blandit enim. Curabitur vitae elit a erat malesuada posuere id et ipsum. Sed rutrum fermentum sollicitudin. In malesuada massa nulla, vel euismod metus dignissim vitae. Vivamus ut nunc est. Praesent sit amet iaculis dui, id lobortis urna. Nam ut facilisis orci. Duis tincidunt velit vestibulum massa laoreet scelerisque. Duis massa justo, accumsan ac feugiat sit amet, tempor vel mauris. Curabitur a eros elit. Aliquam condimentum at neque sed venenatis.</p>
 
             <div class="sub-section-row button-section">
                 <a href="#" onclick="displayIntroduction()" class="button red">Introduction</a>
+                <a href="#" onclick="displayAbout()" class="button violet ta-c">About Me</a>
                 <a href="#" onclick="displayResume()" class="button blue">Resume</a>
                 <a href="#" onclick="displayProjects()" class="button green">Projects</a>
                 <a href="#" onclick="displayContact()" class="button yellow">Contact</a>
             </div>
 
         </div>
-
-        <div class="privacy-abstract-shape"></div>
 
     </div>
 
@@ -246,20 +284,21 @@
     <!-- TERMS OF USE SECTION -->
     <div id="terms" class="section-row terms-section">
 
-        <div class="sub-section image-section">
+        <div class="image-section">
             <img src="assets/images/jane-doe.webp" class="image">
         </div>
 
         <div class="sub-section-col right-section">
 
             <h1>Terms of Use</h1>
-            <p class="p-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tortor eros, aliquet eu dui id, tincidunt sagittis dolor. Donec tristique felis nec consectetur tempor. Vivamus sit amet aliquam magna, sit amet euismod eros. Etiam non sem mollis, aliquet leo nec, laoreet odio. Pellentesque tristique, mi a aliquam porta, turpis velit cursus nulla, eget blandit leo risus quis ipsum. Integer tempus enim ut libero consectetur, a tristique lacus ultricies. Duis molestie placerat sollicitudin. Nullam nunc dolor, pretium id augue nec, lobortis pretium nulla. Mauris faucibus sed sapien in tempor. Nunc faucibus ex non enim vestibulum, vitae hendrerit nisi dignissim. Fusce dapibus lorem nec metus viverra, vitae finibus mi fringilla. Praesent commodo velit a maximus tincidunt. Nam lacinia vitae nulla non dignissim. Integer ante ipsum, mattis sit amet eleifend quis, feugiat non sapien. Nulla vel justo ac orci sagittis dapibus ut vitae dui. Pellentesque quis nisi magna.</p>
-            <p class="p-light">In venenatis nisi risus, ac tincidunt lectus eleifend eu. Phasellus condimentum in dolor id viverra. Vestibulum risus orci, dapibus a turpis vitae, pharetra aliquam ex. Morbi vehicula metus erat, eget placerat ex elementum quis. Etiam vestibulum lorem vel tortor lobortis, eu eleifend nisi sagittis. Donec id elit et dui condimentum aliquet et sit amet elit. Ut vulputate, ipsum ut commodo feugiat, quam tellus posuere nunc, nec porttitor nibh urna vitae neque. Donec feugiat molestie lectus, ut posuere dui sagittis a. Duis placerat dui a leo sagittis, quis fringilla lacus eleifend. Aliquam efficitur tincidunt lorem et lobortis. Curabitur non metus sit amet quam blandit tincidunt. Suspendisse aliquam tempus ante. Donec finibus odio nisl. Integer congue ex et est cursus bibendum et a enim.</p>
-            <p class="p-light">Aliquam quis neque risus. Curabitur rutrum, ante semper rhoncus tincidunt, enim mi tristique elit, at vestibulum purus urna eget nisi. Fusce luctus arcu a nibh interdum ultrices. Sed ac urna aliquam, porttitor sem sed, aliquam eros. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam ac vehicula ex. Fusce ac ultrices nisl, vitae finibus orci. Aenean in porta orci.</p>
-            <p class="p-light">Integer sed accumsan risus. Quisque accumsan nec ante sit amet vulputate. Etiam consequat augue vel ullamcorper maximus. Nulla tincidunt suscipit ullamcorper. Donec quis blandit enim. Curabitur vitae elit a erat malesuada posuere id et ipsum. Sed rutrum fermentum sollicitudin. In malesuada massa nulla, vel euismod metus dignissim vitae. Vivamus ut nunc est. Praesent sit amet iaculis dui, id lobortis urna. Nam ut facilisis orci. Duis tincidunt velit vestibulum massa laoreet scelerisque. Duis massa justo, accumsan ac feugiat sit amet, tempor vel mauris. Curabitur a eros elit. Aliquam condimentum at neque sed venenatis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tortor eros, aliquet eu dui id, tincidunt sagittis dolor. Donec tristique felis nec consectetur tempor. Vivamus sit amet aliquam magna, sit amet euismod eros. Etiam non sem mollis, aliquet leo nec, laoreet odio. Pellentesque tristique, mi a aliquam porta, turpis velit cursus nulla, eget blandit leo risus quis ipsum. Integer tempus enim ut libero consectetur, a tristique lacus ultricies. Duis molestie placerat sollicitudin. Nullam nunc dolor, pretium id augue nec, lobortis pretium nulla. Mauris faucibus sed sapien in tempor. Nunc faucibus ex non enim vestibulum, vitae hendrerit nisi dignissim. Fusce dapibus lorem nec metus viverra, vitae finibus mi fringilla. Praesent commodo velit a maximus tincidunt. Nam lacinia vitae nulla non dignissim. Integer ante ipsum, mattis sit amet eleifend quis, feugiat non sapien. Nulla vel justo ac orci sagittis dapibus ut vitae dui. Pellentesque quis nisi magna.</p>
+            <p>In venenatis nisi risus, ac tincidunt lectus eleifend eu. Phasellus condimentum in dolor id viverra. Vestibulum risus orci, dapibus a turpis vitae, pharetra aliquam ex. Morbi vehicula metus erat, eget placerat ex elementum quis. Etiam vestibulum lorem vel tortor lobortis, eu eleifend nisi sagittis. Donec id elit et dui condimentum aliquet et sit amet elit. Ut vulputate, ipsum ut commodo feugiat, quam tellus posuere nunc, nec porttitor nibh urna vitae neque. Donec feugiat molestie lectus, ut posuere dui sagittis a. Duis placerat dui a leo sagittis, quis fringilla lacus eleifend. Aliquam efficitur tincidunt lorem et lobortis. Curabitur non metus sit amet quam blandit tincidunt. Suspendisse aliquam tempus ante. Donec finibus odio nisl. Integer congue ex et est cursus bibendum et a enim.</p>
+            <p>Aliquam quis neque risus. Curabitur rutrum, ante semper rhoncus tincidunt, enim mi tristique elit, at vestibulum purus urna eget nisi. Fusce luctus arcu a nibh interdum ultrices. Sed ac urna aliquam, porttitor sem sed, aliquam eros. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam ac vehicula ex. Fusce ac ultrices nisl, vitae finibus orci. Aenean in porta orci.</p>
+            <p>Integer sed accumsan risus. Quisque accumsan nec ante sit amet vulputate. Etiam consequat augue vel ullamcorper maximus. Nulla tincidunt suscipit ullamcorper. Donec quis blandit enim. Curabitur vitae elit a erat malesuada posuere id et ipsum. Sed rutrum fermentum sollicitudin. In malesuada massa nulla, vel euismod metus dignissim vitae. Vivamus ut nunc est. Praesent sit amet iaculis dui, id lobortis urna. Nam ut facilisis orci. Duis tincidunt velit vestibulum massa laoreet scelerisque. Duis massa justo, accumsan ac feugiat sit amet, tempor vel mauris. Curabitur a eros elit. Aliquam condimentum at neque sed venenatis.</p>
 
             <div class="sub-section-row button-section">
                 <a href="#" onclick="displayIntroduction()" class="button red">Introduction</a>
+                <a href="#" onclick="displayAbout()" class="button violet ta-c">About Me</a>
                 <a href="#" onclick="displayResume()" class="button blue">Resume</a>
                 <a href="#" onclick="displayProjects()" class="button green">Projects</a>
                 <a href="#" onclick="displayContact()" class="button yellow">Contact</a>
@@ -267,18 +306,56 @@
 
         </div>
 
-        <div class="terms-abstract-shape"></div>
-
     </div>
 
 
-
-<hr>
-
-
+    <!-- FOOTER -->
     <footer>
 
+        <hr>
+
+        <!-- Footer Section: Display at > 876px -->
         <div class="section-row footer-section">
+    
+            <div class="sub-section-col">
+                <p class="p-bold">Jane Doe</p>
+                <a href="#" class="nav-link" onclick="displayIntroduction()">Introduction</a>
+                <a href="#" class="nav-link" onclick="displayAbout()">About Me</a>
+                <a href="#" class="nav-link" onclick="displayResume()">Resume</a>
+                <a href="#" class="nav-link" onclick="displayProjects()">My Projects</a>
+                <a href="#" class="nav-link" onclick="displayCotact()">Contact Me</a>
+            </div>
+
+            <div class="sub-section-col">
+                <p class="p-bold">Legal</p>
+                <a href="#" class="nav-link" onclick="displayPrivacy()">Privacy Policy</a>
+                <a href="#" class="nav-link" onclick="displayTerms()">Terms of Use</a>
+            </div>
+
+            <div class="sub-section-col">
+                <p class="p-bold">Social Media</p>
+                <div class="sub-section-row social-icons-section">
+                    <a href="#"><svg class="social-icons" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 509.64"><rect width="512" height="509.64" rx="115.61" ry="115.61"/><path fill="#fff" d="M204.97 197.54h64.69v33.16h.94c9.01-16.16 31.04-33.16 63.89-33.16 68.31 0 80.94 42.51 80.94 97.81v116.92h-67.46l-.01-104.13c0-23.81-.49-54.45-35.08-54.45-35.12 0-40.51 25.91-40.51 52.72v105.86h-67.4V197.54zm-38.23-65.09c0 19.36-15.72 35.08-35.08 35.08-19.37 0-35.09-15.72-35.09-35.08 0-19.37 15.72-35.08 35.09-35.08 19.36 0 35.08 15.71 35.08 35.08zm-70.17 65.09h70.17v214.73H96.57V197.54z"/></svg></a>
+                    <a href="#"><svg class="social-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>    </a>                    
+                </div>
+            </div>
+
+
+            <div class="sub-section-col">
+                <p class="p-bold">Telephone</p>
+                <p>+44 0100 000000</p>
+            </div>
+    
+            <div class="sub-section-col">
+                <p class="p-bold">Email</p>
+                <p>email@some-email-address</p>
+            </div>
+        
+        </div>
+    
+
+        <!-- Footer Tablet Section: Display at < 877px -->
+        <div class="section-row footer-tablet-section">
     
             <div class="sub-section-col">
                 <p class="p-bold">Jane Doe</p>
@@ -296,41 +373,61 @@
 
             <div class="sub-section-col">
                 <p class="p-bold">Social Media</p>
-                <svg class="social-in" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 509.64"><rect width="512" height="509.64" rx="115.61" ry="115.61"/><path fill="#fff" d="M204.97 197.54h64.69v33.16h.94c9.01-16.16 31.04-33.16 63.89-33.16 68.31 0 80.94 42.51 80.94 97.81v116.92h-67.46l-.01-104.13c0-23.81-.49-54.45-35.08-54.45-35.12 0-40.51 25.91-40.51 52.72v105.86h-67.4V197.54zm-38.23-65.09c0 19.36-15.72 35.08-35.08 35.08-19.37 0-35.09-15.72-35.09-35.08 0-19.37 15.72-35.08 35.09-35.08 19.36 0 35.08 15.71 35.08 35.08zm-70.17 65.09h70.17v214.73H96.57V197.54z"/></svg>
+                <div class="social-icons-section">
+                    <a href="#"><svg class="social-icons" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 509.64"><rect width="512" height="509.64" rx="115.61" ry="115.61"/><path fill="#fff" d="M204.97 197.54h64.69v33.16h.94c9.01-16.16 31.04-33.16 63.89-33.16 68.31 0 80.94 42.51 80.94 97.81v116.92h-67.46l-.01-104.13c0-23.81-.49-54.45-35.08-54.45-35.12 0-40.51 25.91-40.51 52.72v105.86h-67.4V197.54zm-38.23-65.09c0 19.36-15.72 35.08-35.08 35.08-19.37 0-35.09-15.72-35.09-35.08 0-19.37 15.72-35.08 35.09-35.08 19.36 0 35.08 15.71 35.08 35.08zm-70.17 65.09h70.17v214.73H96.57V197.54z"/></svg></a>                    
+                    <a href="#"><svg class="social-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a>                    
+
+                </div>
             </div>
-    
-            <div class="sub-section-col">
-                <p class="p-bold">Telephone</p>
-                <p>+44 0100 000000</p>
-            </div>
-    
-            <div class="sub-section-col">
-                <p class="p-bold">Email</p>
-                <p>email@some email address</p>
-            </div>
-        
+       
         </div>
     
-        <p class="ta-c">&copy Copyright 2025</p>
-    
+
+        <hr>
+        <!-- Footer Bottom Section: Display at > 876px -->
+        <div class="sub-section-row footer-bottom-section">
+            <p class="ta-c">&copy Copyright 2025</p>
+        </div>
+
+        <!-- Footer Tablet Bottom Section: Display at < 877px -->
+        <div class="sub-section-row footer-bottom-tablet-section">
+            <p>Telephone: +44 0100 000000</p>
+            <p>&copy Copyright 2025</p>
+            <p>Email: email@some-email-address</p>
+        </div>
+
+        <hr>
+
+        <div class="version-section">
+            <a href="./index.html" class="version-link">Version 1</a>
+            <a href="./indexV2.html" class="version-link">Version 2</a>
+            <a href="./indexV3.html" class="version-link">Version 3</a>
+        </div>
+
     </footer>
 
 
 
-    <!-- BIG MAC MOBILE FOOTER NAVIGATION MENU -->
+    <!-- BIG MAC "FOOTER" MOBILE NAVIGATION MENU -->
     <!-- Only displayed when screen size is 678px or below -->
     <div class="bigmac1-section">
+
+        <hr>
+
         <div class="bigmac1">
+
             <div class="bigmac1-header">
-                <h3>Jane Doe</h3>
-                <p class="p-header">Software Engineer</p>
+                <a href="#" class="header-nav-link logo" onclick="displayIntroduction()"><h3>Jane Doe</h3></a>
+                <a href="#" class="header-nav-link" onclick="displayIntroduction()">Software Engineer</a>
             </div>
+
             <div id="bigmac1-links">
 
                 <button class="menu-button1" onclick="displayIntroduction()"><a href="#">Introduction</a></button><br>
+                <button class="menu-button1" onclick="displayAbout()"><a href="#">About Me</a></button><br>
                 <button class="menu-button1" onclick="displayResume()"><a href="#">Resume</a></button><br>
-                <button class="menu-button1" onclick="displayProjects()"><a href="#">Projects</a></button><br>
-                <button class="menu-button1" onclick="displayContact()"><a href="#">Contact</a></button><br>
+                <button class="menu-button1" onclick="displayProjects()"><a href="#">My Projects</a></button><br>
+                <button class="menu-button1" onclick="displayContact()"><a href="#">Contact Me</a></button><br>
                 <button class="menu-button1" onclick="displayPrivacy()"><a href="#">Privacy Policy</a></button><br>
                 <button class="menu-button1" onclick="displayTerms()"><a href="#">Terms of Use</a></button><br>
 
@@ -338,12 +435,22 @@
             <a href="javascript:void(0);" class="icon" onclick="myFunction1()"><i class="fa fa-bars"></i></a>
         </div>
 
-
         <div style="padding-left:16px"><p></p></div>
+
+        <hr>
         <div class="bigmac1-footer">
             <p class="ta-c">&copy Copyright 2025</p>
-            <svg class="social-in" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 509.64"><rect width="512" height="509.64" rx="115.61" ry="115.61"/><path fill="#fff" d="M204.97 197.54h64.69v33.16h.94c9.01-16.16 31.04-33.16 63.89-33.16 68.31 0 80.94 42.51 80.94 97.81v116.92h-67.46l-.01-104.13c0-23.81-.49-54.45-35.08-54.45-35.12 0-40.51 25.91-40.51 52.72v105.86h-67.4V197.54zm-38.23-65.09c0 19.36-15.72 35.08-35.08 35.08-19.37 0-35.09-15.72-35.09-35.08 0-19.37 15.72-35.08 35.09-35.08 19.36 0 35.08 15.71 35.08 35.08zm-70.17 65.09h70.17v214.73H96.57V197.54z"/></svg>
+            <a href="#"><svg class="social-icons" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 509.64"><rect width="512" height="509.64" rx="115.61" ry="115.61"/><path fill="#fff" d="M204.97 197.54h64.69v33.16h.94c9.01-16.16 31.04-33.16 63.89-33.16 68.31 0 80.94 42.51 80.94 97.81v116.92h-67.46l-.01-104.13c0-23.81-.49-54.45-35.08-54.45-35.12 0-40.51 25.91-40.51 52.72v105.86h-67.4V197.54zm-38.23-65.09c0 19.36-15.72 35.08-35.08 35.08-19.37 0-35.09-15.72-35.09-35.08 0-19.37 15.72-35.08 35.09-35.08 19.36 0 35.08 15.71 35.08 35.08zm-70.17 65.09h70.17v214.73H96.57V197.54z"/></svg></a>                    
+            <a href="#"><svg class="social-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a>                    
         </div>
+        <hr>
+
+        <div class="version-section">
+            <a href="./index.html" class="version-link">Version 1</a>
+            <a href="./indexV2.html" class="version-link">Version 2</a>
+            <a href="./indexV3.html" class="version-link">Version 3</a>
+        </div>
+
     </div>
 
 

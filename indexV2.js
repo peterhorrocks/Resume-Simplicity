@@ -5,31 +5,6 @@ function displayIntroduction() {
     $(".intro-section").show("slow");
     x.style.display = "flex";
 
-    x = document.getElementById("about");
-    x.style.display = "none";
-    x = document.getElementById("resume");
-    x.style.display = "none";
-    x = document.getElementById("projects");
-    x.style.display = "none";
-    x = document.getElementById("contact");
-    x.style.display = "none";
-    x = document.getElementById("privacy");
-    x.style.display = "none";
-    x = document.getElementById("terms");
-    x.style.display = "none";
-    x = document.getElementById("bigmac-links");
-    x.style.display = "none";
-    x = document.getElementById("bigmac1-links");
-    x.style.display = "none";
-}
-
-function displayAbout() {
-    var x = document.getElementById("about");
-    $(".about-section").show("slow");
-    x.style.display = "flex"
-
-    x = document.getElementById("intro");
-    x.style.display = "none";
     x = document.getElementById("resume");
     x.style.display = "none";
     x = document.getElementById("projects");
@@ -53,8 +28,6 @@ function displayResume() {
 
     x = document.getElementById("intro");
     x.style.display = "none";
-    x = document.getElementById("about");
-    x.style.display = "none";
     x = document.getElementById("projects");
     x.style.display = "none";
     x = document.getElementById("contact");
@@ -75,8 +48,6 @@ function displayProjects() {
     x.style.display = "flex";
 
     x = document.getElementById("intro");
-    x.style.display = "none";
-    x = document.getElementById("about");
     x.style.display = "none";
     x = document.getElementById("resume");
     x.style.display = "none";
@@ -99,8 +70,6 @@ function displayContact() {
 
     x = document.getElementById("intro");
     x.style.display = "none";
-    x = document.getElementById("about");
-    x.style.display = "none";
     x = document.getElementById("resume");
     x.style.display = "none";
     x = document.getElementById("projects");
@@ -122,8 +91,6 @@ function displayPrivacy() {
 
     x = document.getElementById("intro");
     x.style.display = "none";
-    x = document.getElementById("about");
-    x.style.display = "none";
     x = document.getElementById("resume");
     x.style.display = "none";
     x = document.getElementById("projects");
@@ -144,8 +111,6 @@ function displayTerms() {
     x.style.display = "flex";
 
     x = document.getElementById("intro");
-    x.style.display = "none";
-    x = document.getElementById("about");
     x.style.display = "none";
     x = document.getElementById("resume");
     x.style.display = "none";
