@@ -1,5 +1,4 @@
 /* LAYOUT STYLING */
-/* ============== */
 
 body {
     font-family: Roboto, sans-serif;
@@ -7,10 +6,14 @@ body {
     padding: 0 5% 0 5%;
 }
 
-.bigmac-section {display: none;}
-.bigmac1-section {display: none;}
+.bigmac-section {
+    display: none;
+}
+.bigmac1-section {
+    display: none;
+}
 
-/* NAVIGATION SECTION */
+/* Navigation / Header Section */
 
 .nav-section {
     display: flex;
@@ -20,64 +23,48 @@ body {
     margin: 2% 0 0 0;
     /*border: solid; color: black;*/
 }
-/* Navigation Left Header Styling */
+
 .nav-header {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     align-content: center;
     align-items: baseline;
     gap: 2%;
-    width: 50%;
+    width: 40%;
     /*border: solid; color: red;*/
 }
-.header-nav-link {
-    font-size: medium;
-    width: fit-content;
-    padding: 2%;
-    color: black;
-    text-decoration: none;
-    border: none;
-    background: none;
-}
-.logo {
-    font-size: 150%;
-    font-weight: bold;
-    padding: 0;
-}
-/* Navigation Right Bar Styling */
 .navbar {
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
-    align-content: center;
-    align-items: baseline;
-    gap: 2%;
     width: 50%;
+    gap: 2%;
     /*border: solid; color: red;*/
+}
+.nav-item {
+    width: auto;
+    height: fit-content;
+}
+.nav-item-border {
+    padding-right: 3%;
+    border-right: solid; border-width: thin;
 }
 .nav-link {
     font-size: medium;
-    width: fit-content;
-    padding: 2%;
     color: black;
     text-decoration: none;
     border: none;
     background: none;
-}
-.nav-link:hover {
-    background: #FF8A8A;
     cursor: pointer;
 }
 
-/* GLOBAL SECTIONS */
+/* Global Sections */
 
 .section-row {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: auto;
-    margin-top: 1%;
+    margin-top: 5%;
     /*border: solid; color: black;*/
 }
 .sub-section-row {
@@ -92,51 +79,92 @@ body {
     width: 100%;
     /*border: solid; color: red;*/
 }
-.image-section {
+sub-section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 40%;
-    padding: 0;
+    width: 100%;
 }
-.image-container {display: flex;}
+
+/* Specific Section Layout */
+
+.intro-image-section {
+    justify-content: end;
+    align-content:flex-end;
+    padding: 0;
+    /*border: solid; color: red;*/
+}
+.intro-right-section {
+    padding-top: 5%;
+}
 
 .right-section {
-    width: 60%;
-    padding-top: 8%;
+    padding-top: 5%;
+}
+.image-section {
+    justify-content: flex-start;
+    align-content: flex-start;
+    width: 50%;
+    padding: 0;
+    /*border: solid; color: red;*/
 }
 
-/* LAYOUT STYLINGS FOR SPECIFIC SECTIONS */
 
-/* Common Styling for all the other sections */
-
-.button-section {
-    display: flex;
-    flex-wrap: wrap;
+/* RESUME SECTION */
+.resume-section {
+    display: none;
+}
+/* Display image section from the left */
+.resume-image-section {
+    justify-content: flex-start;
+    align-content: flex-start;
+    width: 50%;
+    padding: 0;
+    animation: 2s ease resume-image-section;
+}
+@keyframes resume-image-section {
+    from {margin-left: -100%;}
+    to {margin-left: 0%;}
+}
+/* Display right section from the right */
+.resume-right-section {
+    padding-top: 5%;
+    animation: 2s ease resume-right-section;
+}
+@keyframes resume-right-section {
+    from {margin-left: 100%;}
+    to {margin-left: 0%;}
 }
 
-footer {margin-bottom: 2%;}
-
-.footer-bottom-section {
-    display: flex;
-    justify-content: center;
+/* PROJECTS SECTION */
+/* Display from the right */
+.projects-section {
+    display: none;
+    animation: 2s ease projects-section;
 }
-/* Display at 876px */
-.footer-tablet-section {display: none;}
-.footer-bottom-tablet-section {display: none;}
-
-.social-icons-section {
-    display: flex;
-    gap: 3%;
+@keyframes projects-section {
+    from {margin-left: 100%;}
+    to {margin-left: 0%;}
 }
 
-.intro-section {margin-bottom: 10%;}
-.about-section {display: none; margin-bottom: 10%;}
-.resume-section {display: none; margin-bottom: 10%;}
-.projects-section {display: none; margin-bottom: 10%;}
-.contact-section {display: none; margin-bottom: 10%;}
-.privacy-section {display: none; margin-bottom: 10%;}
-.terms-section {display: none; margin-bottom: 10%;}
+/* CONTACT SECTION */
+/* Display from the left */
+.contact-section {
+    display: none;
+    animation: 2s ease contact-section;
+}
+@keyframes contact-section {
+    from {margin-left: -100%;}
+    to {margin-left: 0%;}
+}
+
+
+.privacy-section {display: none;}
+.terms-section {display: none;}
+
+
+
+footer {
+    margin-bottom: 2%;
+}
 
 .version-link {
     font-size: medium;
@@ -151,45 +179,41 @@ footer {margin-bottom: 2%;}
     cursor: pointer;
 }
 
+
 /* CONTENT STYLING */
-/* =============== */
 
 /* Global Content Attributes */
+.yellow {background: #F6F193;}
 .red {background: #FF8A8A;}
-.violet {background: plum;}
 .blue {background: #BFECFF;}
 .green {background: #A5DD9B;}
-.yellow {background: #F6F193;}
 
 .ta-c {text-align: center;}
 
-/* IMAGES */
+/* Images */
 .image {
-    width: 100%;
-    height: auto;
+    width: 80%;
+    max-height: 500px;
     margin: 0;
     padding: 0;
-    clip-path: circle(40%);
-}
-.image-medium {
-    width: 50%;
+    clip-path: circle(35%);
 }
 
-.social-icons {width: 30px;}
+.social-in {width: 10%;}
 
-/* BUTTONS */
+/* Buttons */
 .button {
     font-weight: bold;
     color: black;
     text-decoration: none;
     margin: 3%;
-    padding: 2% 4% 2% 4%;
+    padding: 4%;
     border: solid; border-width: thin;
-    border-radius: 80%;
+    border-radius: 50%;
     cursor: pointer;
 }
 
-/* TEXT */
+/* Text */
 h1 {
     font-family: "Playfair Display", serif;
     font-size: 450%;
@@ -200,57 +224,46 @@ h1 {
 h2 {
     font-size: 250%;
     color: black;
-    margin: 1% 0 0 0 ;
+    margin: 0 1% 0 1%;
     padding: 0;
 }
 h3 {
     font-size: 150%;
     color: black;
-    margin: 1% 0 1% 0 ;
+    margin: 0 1% 0 1%;
     padding: 0;
 }
 h4 {
     font-size: 100%;
     color: black;
-    margin: 1% 0 0 0 ;
+    margin: 0 1% 0 1%;
     padding: 0;
 }
-p {color: black;}
-
-.p-bold {font-weight: bold;}
-
-ul {list-style-type: none;}
-
-li {
-    font-size: medium;
-    margin-bottom: 2%;
+p {
+    color: black;
+}
+.p-header {
+    margin-top: 2%;
+    color: black;
+}
+.p-divider {
+    margin: 0;
+    padding: 0;
+}
+.p-light {
+    font-weight: 350;
+    color: black;
+}
+.p-bold {
+    font-weight: bold;
 }
 
 
-/* BREAKPOINTS */
-/* Laptop/Desktop > 876px */
-/* Tablet 876px */
-/* Mobile 678px */
 
-/* Tablet 876px */
-/* Re-arrange Footer Section */
-@media (min-width: 679px) and (max-width: 876px) {
 
-    .footer-section {display: none;}
 
-    .footer-tablet-section {display: flex;}
 
-    .footer-bottom-section {display: none;}
-
-    .footer-bottom-tablet-section {
-        display: flex;
-        justify-content: space-evenly;
-    }
-    .footer-bottom-tablet-section p {font-size: small;}
-}
-
-/* Mobile 678px */
-/* Single Column */
+/* 678px Single Column */
 @media (max-width: 678px) {
 
     .nav-section {display: none;}
@@ -263,18 +276,25 @@ li {
         margin-top: 1%;
         /*border: solid; color: black;*/
     }
+    .intro-image-section {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        /*border: solid; color: red;*/
+    }
+    .intro-right-section {
+        padding-top: 0;
+    }
+
     .image-section {
         display: flex;
         justify-content: center;
-        width: 75%;
         padding: 0;
         /*border: solid; color: red;*/
     }
     .right-section {
-        width: 100%;
         padding-top: 0;
     }
-    .image {width: 100%;}
             
     /* Mobile HEADER Menu*/
     .bigmac-section {
@@ -310,11 +330,12 @@ li {
         cursor: pointer;
     }
     .menu-button:hover {
-        background-color: #FF8A8A;
+        background-color: lightgrey;
         color: black;
     }
-    #bigmac-links {display: none;}
-
+    #bigmac-links {
+        display: none;
+    }
     /* bigmac Icon */
     .bigmac a {
         color: black;
@@ -333,8 +354,9 @@ li {
     }
 
 
-    h3 {margin-top: 1%;}
-
+    h3 {
+        margin-top: 1%;
+    }
     .p-header {
         padding: 0 10% 0 0;
         color: black;
@@ -349,6 +371,7 @@ li {
         display: contents;
         flex-direction: row;
         width: 98%;
+        margin: 2%;
         height: 500px;
         background-color: black;
         color: white;
@@ -377,11 +400,12 @@ li {
         cursor: pointer;
     }
     .menu-button1:hover {
-        background-color: #FF8A8A;
+        background-color: lightgrey;
         color: black;
     }
-    #bigmac1-links {display: none;}
-
+    #bigmac1-links {
+        display: none;
+    }
     /* bigmac Icon */
     .bigmac1 a {
         color: black;
@@ -404,8 +428,9 @@ li {
         justify-content: center;
         gap: 5%;
     }
+    .social-in {width: 5%;}
+   
 
-    .about-section {display: none;}
     .resume-section {display: none;}
     .projects-section {display: none;}
     .contact-section {display: none;}
