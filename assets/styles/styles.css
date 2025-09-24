@@ -1,0 +1,452 @@
+/* LAYOUT STYLING */
+
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0%;
+    padding: 0 5% 0 5%;
+}
+
+.bigmac-section {
+    display: none;
+}
+.bigmac1-section {
+    display: none;
+}
+
+/* Navigation / Header Section */
+
+.nav-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    margin: 2% 0 0 0;
+    /*border: solid; color: black;*/
+}
+
+.nav-header {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: baseline;
+    gap: 2%;
+    width: 40%;
+    /*border: solid; color: red;*/
+}
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    gap: 2%;
+    /*border: solid; color: red;*/
+}
+.nav-item {
+    width: auto;
+    height: fit-content;
+}
+.nav-item-border {
+    padding-right: 3%;
+    border-right: solid; border-width: thin;
+}
+.nav-link {
+    font-size: medium;
+    width: fit-content;
+    padding: 3%;
+    color: black;
+    text-decoration: none;
+    border: none;
+    background: none;
+}
+.nav-link:hover {
+    background: #BFECFF;
+    cursor: pointer;
+}
+
+/* Global Sections */
+
+.section-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: auto;
+    margin-top: 5%;
+    /*border: solid; color: black;*/
+}
+.sub-section-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /*border: solid; color: red;*/
+}
+.sub-section-col {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /*border: solid; color: red;*/
+}
+sub-section {
+    display: flex;
+    width: 100%;
+}
+
+/* Specific Section Layout */
+
+/* Introduction Section */
+.intro-image-section {
+    justify-content: flex-end;
+    align-content: flex-end;
+    width: 50%;
+    padding: 0;
+}
+.intro-right-section {
+    width: 50%;
+    padding-top: 5%;
+}
+.intro-abstract-shape {
+    position: absolute;
+    width: 98%;
+    height: 82%;
+    top: 15%;
+    background: #FF8A8A;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    z-index: -1;
+}
+
+
+/* Common Styling for all the other sections */
+.image-section {
+    justify-content: flex-start;
+    align-content: flex-start;
+    width: 50%;
+    padding: 0;
+    /*border: solid; color: red;*/
+}
+.right-section {
+    padding-top: 5%;
+}
+
+
+.resume-section {display: none;}
+.resume-abstract-shape {
+    position: absolute;
+    width: 98%;
+    height: 55%;
+    top: 15%;
+    background: #BFECFF;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    z-index: -1;
+}
+
+.projects-section {display: none;}
+.projects-abstract-shape {
+    position: absolute;
+    width: 98%;
+    height: 55%;
+    top: 15%;
+    background: #A5DD9B;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    z-index: -1;
+}
+
+.contact-section {display: none;}
+.contact-abstract-shape {
+    position: absolute;
+    width: 98%;
+    height: 55%;
+    top: 15%;
+    background: #F6F193;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    z-index: -1;
+}
+
+.privacy-section {display: none;}
+.privacy-abstract-shape {
+    position: absolute;
+    width: 98%;
+    height: 55%;
+    top: 15%;
+    background: plum;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    z-index: -1;
+}
+
+.terms-section {display: none;}
+.terms-abstract-shape {
+    position: absolute;
+    width: 98%;
+    height: 55%;
+    top: 15%;
+    background: orange;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    z-index: -1;
+}
+
+
+
+footer {
+    margin-bottom: 2%;
+}
+
+
+/* CONTENT STYLING */
+
+/* Global Content Attributes */
+.red {background: #FF8A8A;}
+.blue {background: #BFECFF;}
+.green {background: #A5DD9B;}
+.yellow {background: #F6F193;}
+
+.ta-c {text-align: center;}
+
+/* Images */
+.image {
+    width: 80%;
+    max-height: 500px;
+    margin: 0;
+    padding: 0;
+    clip-path: circle(35%);
+}
+
+.social-in {width: 10%;}
+
+/* Buttons */
+.button {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    margin: 3%;
+    padding: 2% 4% 2% 4%;
+    border: solid; border-width: thin;
+    border-radius: 80%;
+    cursor: pointer;
+}
+
+/* Text */
+h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 450%;
+    color: black;
+    margin: 0;
+    padding: 1% 0% 1% 0%;
+}
+h2 {
+    font-size: 250%;
+    color: black;
+    margin: 0 1% 0 1%;
+    padding: 0;
+}
+h3 {
+    font-size: 150%;
+    color: black;
+    margin: 0 1% 0 1%;
+    padding: 0;
+}
+h4 {
+    font-size: 100%;
+    color: black;
+    margin: 0 1% 0 1%;
+    padding: 0;
+}
+p {
+    color: black;
+}
+.p-header {
+    margin-top: 2%;
+    color: black;
+}
+.p-divider {
+    margin: 0;
+    padding: 0;
+}
+.p-light {
+    font-weight: 350;
+    color: black;
+}
+.p-bold {
+    font-weight: bold;
+}
+
+
+
+
+
+
+/* 678px Single Column */
+@media (max-width: 678px) {
+
+    .nav-section {display: none;}
+    
+
+    .section-row {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin-top: 1%;
+        /*border: solid; color: black;*/
+    }
+    .intro-image-section {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        width: 90%;
+        /*border: solid; color: red;*/
+    }
+    .intro-right-section {
+        padding-top: 0;
+    }
+    .right-section {
+        padding-top: 0;
+    }
+    .image-section {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        width: 90%;
+        /*border: solid; color: red;*/
+    }
+    .image {
+        width: 100%;
+    }
+            
+    /* Mobile HEADER Menu*/
+    .bigmac-section {
+        display: contents;
+        flex-direction: row;
+        width: 98%;
+        margin: 2%;
+        height: 500px;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+    }
+    .bigmac {
+        display: flex;
+        width: auto;
+        position: relative;
+        margin-bottom: 2%;
+    }
+    .bigmac-header {
+        display: flex;
+        flex-direction: column;
+        gap: 2%;
+        width: 50%;
+    }
+    /* Dropdown Links */
+    .menu-button {
+        font-size: medium;
+        padding: 0 4px;
+        color: black;
+        text-decoration: none;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+    .menu-button:hover {
+        background-color: lightgrey;
+        color: black;
+    }
+    #bigmac-links {
+        display: none;
+    }
+    /* bigmac Icon */
+    .bigmac a {
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+    .bigmac a.icon {
+        background: black;
+        color: white;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+
+    h3 {
+        margin-top: 1%;
+    }
+    .p-header {
+        padding: 0 10% 0 0;
+        color: black;
+    }
+    
+
+    /* Mobile FOOTER Menu*/
+
+    footer {display: none;}
+
+    .bigmac1-section {
+        display: contents;
+        flex-direction: row;
+        width: 98%;
+        margin: 2%;
+        height: 500px;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+    }
+    .bigmac1 {
+        display: flex;
+        width: auto;
+        position: relative;
+        margin-bottom: 2%;
+    }
+    .bigmac1-header {
+        display: flex;
+        flex-direction: column;
+        gap: 2%;
+        width: 50%;
+    }
+    /* Dropdown Links */
+    .menu-button1 {
+        font-size: medium;
+        padding: 0 4px;
+        color: black;
+        text-decoration: none;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+    .menu-button1:hover {
+        background-color: lightgrey;
+        color: black;
+    }
+    #bigmac1-links {
+        display: none;
+    }
+    /* bigmac Icon */
+    .bigmac1 a {
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+    .bigmac1 a.icon {
+        background: black;
+        color: white;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .bigmac1-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5%;
+    }
+    .social-in {width: 5%;}
+   
+
+    .resume-section {display: none;}
+    .projects-section {display: none;}
+    .contact-section {display: none;}
+    .privacy-section {display: none;}
+    .terms-section {display: none;}
+    
+}
